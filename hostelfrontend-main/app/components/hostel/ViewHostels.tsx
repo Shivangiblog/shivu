@@ -342,7 +342,7 @@ const ViewHostels: React.FC = () => {
       if (!token) throw new Error("Authentication error");
 
       const response = await axios.put(
-        `http://localhost:5000/api/hostels/${profileId}update-hostel`,
+        `http://localhost:5000/api/hostels/update-hostel`,
         formData,
         {
           headers: {
